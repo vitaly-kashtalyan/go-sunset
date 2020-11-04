@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+    restart: always
+    container_name: go_twilight_app
+    ports:
+      - 8070:8080
+    tty: true
