@@ -27,8 +27,8 @@ func main() {
 
 	// Routes
 	e.GET("/health", health)
-	e.GET("/", sun)
-	e.GET("/status", status)
+	e.GET("/", status)
+	e.GET("/sun", sun)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":8080"))
